@@ -25,7 +25,10 @@ public class DungeonConfig implements ConfigData {
     @ConfigEntry.Gui.CollapsibleObject
     public FeatureConfig TOWER_CONFIG = new FeatureConfig();
 
-    public int TOWER_SEPARATION = 8;
+    public int TOWER_SPACING = 16;
+    public int TOWER_SEPARATION = 4;
+    public int DUNGEON_SPACING = 32;
+    public int DUNGEON_SEPARATION = 8;
 
     DungeonConfig() {
         TOWER_CONFIG.PER_DIM.dimensions.add(DimensionType.OVERWORLD_ID.toString());
